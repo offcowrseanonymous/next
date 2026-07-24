@@ -9,7 +9,11 @@ targets:
     platform: iOS
     deploymentTarget: "15.0"
     sources:
-      - Next
+      - path: .
+        excludes:
+          - "*.md"
+          - "*.yml"
+          - ".github/**"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.local.next.app
